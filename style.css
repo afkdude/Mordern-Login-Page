@@ -130,3 +130,28 @@ input[type="password"] {
   background-color: rgb(255, 253, 253);
   border: 1px solid #00b09b;
 }
+
+
+.signup-socials{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 2rem;
+}
+.signup-socials span{
+  color: gray;
+}
+
+.socials-icon img{
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  /* border: 1px solid red; */
+}
+
+.socials-icon img:hover{
+  /* cursor: pointer; */
+  transform: scale(1.2);
+  transition: 0.5s;
+}
