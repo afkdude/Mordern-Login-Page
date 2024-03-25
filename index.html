@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Mordern Login Page </title>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-  <nav>
-     <div class="nav-container">
+    <title>Mordern Login Page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="profile-pic">
+          <img src="images/profile.png" alt="" />
+        </div>
 
+        <div class="name">
+          <a href="https://github.com/afkdude" target="_blank"
+            ><h3>Shubham Amrawat</h3></a
+          >
+        </div>
+      </div>
+    </nav>
 
-         <div class="profile-pic">
+    <!-- Login section  -->
 
-          <img src="images/profile.png" alt="">
+    <main class="main-container">
+      <div class="login-container">
+        <div class="heading">
+          <h2 class="form-heading">Login</h2>
+        </div>
 
-         </div>
+        <form action="" class="login-form">
+          <label for="username">Username</label>
+          <input
+            type="username"
+            placeholder="Type your Username"
+            class="username"
+          />
 
-         <div class="name">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Type your Password"
+            class="password"
+          />
 
-            <a href="https://github.com/afkdude" target="_blank"><h3>Shubham Amrawat</h3></a>
+          <div class="forgot-password">
+            <span class="forgot"><a href="">Forgot Password?</a></span>
+          </div>
 
-         </div>
-     </div>
-  </nav>
+          <button type="submit" class="login-btn">LOGIN</button>
+        </form>
+      </div>
+    </main>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

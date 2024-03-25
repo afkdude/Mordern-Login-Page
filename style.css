@@ -1,18 +1,16 @@
-*{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
   padding: 0;
-
 }
 
-body{
-background-image: linear-gradient(to right, #00b09b, #96c93d);
+body {
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
 }
-
 
 /* nav section  */
 
-.nav-container{
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -20,29 +18,115 @@ background-image: linear-gradient(to right, #00b09b, #96c93d);
   /* border-bottom: 1px solid black; */
 }
 
-.profile-pic img{
+.profile-pic img {
   width: 4rem;
   height: 4rem;
   padding: 0.3rem;
 }
-.name{
+.name {
   margin-left: 1rem;
 }
 
-.name{
-    
-}
-.name a{
+
+.name a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 2.2rem;
   font-style: oblique;
   margin-top: 1rem;
-
 }
-.name a h3:hover{
+.name a h3:hover {
   border-bottom: 2px solid rgb(71, 203, 255);
   transition: 1s;
-  transform: scale(1);
   color: #ccf389;
+}
+
+/* login section  */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* justify-content: center; */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 0.7rem;
+}
+
+.login-container {
+  background-color: #eff1ea;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  padding: 2rem;
+  width: 400px;
+  height: 600px;
+}
+
+.heading {
+  display: flex;
+
+  font-size: 1.7rem;
+  justify-content: center;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.2rem;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: grey;
+}
+
+.login-form input {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-bottom: 1px solid grey;
+  background-color: #eff1ea;
+  outline: none;
+}
+.login-form label {
+  color: grey;
+}
+.username {
+  background-image: url(images/username.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+
+input[type="username"],
+input[type="password"] {
+  padding-left: 3.3rem;
+}
+
+.password {
+  background-image: url(images/lock.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+
+.login-btn {
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+  /* background-image: linear-gradient(to right, #00b09b, #96c93d); */
+  background-color: #00b09b;
+  cursor: pointer;
+  color: white;
+}
+
+.login-btn:hover {
+  color: #00b09b;
+  background-color: rgb(255, 253, 253);
+  border: 1px solid #00b09b;
 }
